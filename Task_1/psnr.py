@@ -16,4 +16,4 @@ def psnr(first, second):
 
 img = cv2.imread("boka.jpg", 1)
 img2 = cv2.imread("joka.jpg", 1)
-print(psnr(img, img2))
+print(f'Pair similarity: {psnr(img, img2)}')
