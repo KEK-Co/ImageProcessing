@@ -1,5 +1,5 @@
-import cv2
 import math
+import cv2
 import numpy as np
 
 
@@ -12,7 +12,7 @@ def psnr(first, second):
     mse = np.mean((first - second) ** 2)
     if mse == 0:
         return 100
-    return 10 * math.log10(1.0 ** 2 / mse)
+    return 10 * math.log10(1.0 / mse)
 
 
 img = cv2.imread("joka.jpg", 1)
