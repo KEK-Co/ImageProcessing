@@ -1,7 +1,7 @@
 from time import time, sleep
 from skimage.metrics import structural_similarity as ssim
 from cv2 import imread, imshow, cvtColor, COLOR_BGR2HSV, COLOR_HSV2BGR, waitKey
-from test_env.Task_1.psnr import psnr
+from ImageProcessing.Task_1.psnr import psnr
 
 PICTURES_TEST = ['test_picture.jpg']
 
